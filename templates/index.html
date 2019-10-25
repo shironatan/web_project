@@ -1,0 +1,13 @@
+
+{% extends 'common/_base.html' %}
+{%  block content %}
+    <h1>hello</h1>
+    {% if user.is_authenticated %}
+    <p>こんにちは{{ user.username }}さん</p>
+        <p><a href="{% url 'account_signout' %}">ログアウト</a></p>
+    {% else %}
+        <p>PleaseLogin！</p>
+        <p><a href="{% url 'account_login' %}">ログイン</a></p>
+        <p><a href="{% url 'account_signup' %}">新規登録</a></p>
+    {% endif %}
+{% endblock %}
