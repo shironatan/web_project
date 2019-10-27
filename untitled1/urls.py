@@ -19,6 +19,6 @@ from django.conf.urls import url
 
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url('accounts/',include('app1.urls')),
 ]

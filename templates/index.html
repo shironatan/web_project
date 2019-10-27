@@ -3,7 +3,8 @@
 {%  block content %}
     <h1>hello</h1>
     {% if user.is_authenticated %}
-    <p>こんにちは{{ user.username }}さん</p>
+    <p>こんにちは{{ user.email }}さん</p>
+        <p>{{ user.email_address }}</p>
         <p><a href="{% url 'account_signout' %}">ログアウト</a></p>
     {% else %}
         <p>PleaseLogin！</p>

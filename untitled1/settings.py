@@ -51,7 +51,9 @@ INSTALLED_APPS = [
     'django_extensions',
     'bootstrap4',
     'allauth',
-    'allauth.account'
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.twitter'
 ]
 AUTHENTICATION_BACKENDS = [
    'allauth.account.auth_backends.AuthenticationBackend'
@@ -73,10 +75,7 @@ ROOT_URLCONF = 'untitled1.urls'
 
 LOGIN_REDIRECT_URL = '/'
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(ROOT_PATH, 'static')
-]
+
 
 SITE_ID = 1
 
@@ -101,6 +100,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'untitled1.wsgi.application'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
 
 
 # Database
@@ -139,9 +143,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 
@@ -154,3 +158,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(ROOT_PATH, 'static')
+]
