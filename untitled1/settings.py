@@ -73,8 +73,8 @@ ROOT_URLCONF = 'untitled1.urls'
 
 
 
-LOGIN_REDIRECT_URL = '/'
-
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 
 SITE_ID = 1
@@ -100,11 +100,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'untitled1.wsgi.application'
-
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_USERNAME_REQUIRED = False
 
 
 # Database
