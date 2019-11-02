@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.twitter'
+    'allauth.socialaccount.providers.twitter',
+    'accounts.apps.AccountsConfig',
 ]
 AUTHENTICATION_BACKENDS = [
    'allauth.account.auth_backends.AuthenticationBackend'
