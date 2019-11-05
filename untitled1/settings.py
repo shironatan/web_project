@@ -34,7 +34,6 @@ LOGIN_REDIRECT_URL='/accounts'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost'
 ]
 
 
@@ -55,6 +54,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.twitter',
     'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.google',
     'accounts.apps.AccountsConfig',
     'user.apps.UserConfig',
 ]
@@ -77,7 +77,7 @@ ROOT_URLCONF = 'untitled1.urls'
 
 
 LOGIN_REDIRECT_URL = 'home'
-ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/users/login/'
 
 SITE_ID = 1
 
