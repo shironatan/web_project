@@ -4,9 +4,10 @@
 {%  block content %}
     <h2>ホーム</h2>
     {% if user.is_authenticated %}
-    ようこそ{{ user.get_username }}さん
-    <p><a href="{% url 'account_logout' %}">ログアウト</a></p>
+        <p>ようこそ{{ user.get_username }}さん</p>
+        <p><a href="{% url 'users:account_logout' %}">ログアウト</a></p>
+        <p><a href="{% url 'accounts:password_change' %}">パスワード変更</a></p>
     {% else %}
-    <p><a href="{% url 'account_login' %}">ログイン</a></p>
+    <p><a href="{% url 'users:account_login' %}">ログイン</a></p>
     {% endif %}
 {% endblock %}

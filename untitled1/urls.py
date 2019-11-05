@@ -23,8 +23,10 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/',admin.site.urls),
     path('',TemplateView.as_view(template_name='home.html'),name='home'),
+    #accounts application include
     path('accounts/', include('accounts.urls')),
+    path('users/',include('user.urls')),
+    path('users/',include('allauth.urls')),
+    #auth include
     path('accounts/',include('django.contrib.auth.urls')),
-    path('accounts/login/',views.LoginView.as_view(),name='account_login'),
-    path('accounts/logout/',views.LogoutView.as_view(),name='account_logout'),
 ]

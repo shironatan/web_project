@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f3e17a22-b3f0-4c31-b5b0-53caf09ceb38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +103,7 @@
       <workItem from="1572272867085" duration="4183000" />
       <workItem from="1572534356726" duration="2090000" />
       <workItem from="1572658506343" duration="1689000" />
+      <workItem from="1572664012418" duration="21148000" />
     </task>
     <task id="LOCAL-00001" summary="Emailでの認証/SNS認証（途中）">
       <created>1572164660957</created>

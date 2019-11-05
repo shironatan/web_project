@@ -1,14 +1,21 @@
-from django.shortcuts import render
-from django.contrib.auth.views import PasswordChangeView,PasswordChangeDoneView
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views import generic
+from django.contrib.auth import login,logout
 from django.urls import reverse_lazy
+from django.views.generic import CreateView
 
-#class PasswordChange(LoginRequiredMixin,PasswordChangeView):
-#    success_url = 'registration/password_change_done.html'
-#    template_name = 'registration/password_change_form.html'
 
-#    def get_context_data(self, **kwargs):
-#        context = super().get_context_data(**kwargs)
-#        context['form_name'] = "password_change"
-#        return context
+from .forms import SignupForm
+
+
+#Signup function
+class SignupView(CreateView):
+    form_class = SignupForm
+    success_url = reverse_lazy('home')
+    template_name = 'registration/signup.html'
+
+    def form_valid(self, form):
+        # self.objectにsave()されたユーザーオブジェクトが格納
+        valid = super().form_valid(form)
+        login(self.request,self.object)
+        return valid
+
+
