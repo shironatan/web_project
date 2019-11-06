@@ -32,7 +32,6 @@ class Account_logout(View):
         if self.request.user.is_authenticated:
             # ログイン済みだった場合
             return self.post(*args,**kwargs)
-            print('wa')
         else:
             return redirect('/')
 
