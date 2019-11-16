@@ -10,7 +10,8 @@
             </div>
             <div class="col-sm-2">
                 <h5>Account</h5>
-                <p>{{ user.get_username }}</p>
+                <p>{{ user.username }}</p>
+                <p>{{ user.email }}</p>
                 <p><a href="{% url 'users:account_logout' %}">ログアウト</a></p>
                 <p><a href="{% url 'accounts:password_change' %}">パスワード変更</a></p>
                 <h5>Recommend</h5>

@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'accounts.apps.AccountsConfig',
     'user.apps.UserConfig',
+    'main.apps.MainConfig'
 ]
 AUTHENTICATION_BACKENDS = [
    'allauth.account.auth_backends.AuthenticationBackend'
