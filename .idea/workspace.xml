@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e17a22-b3f0-4c31-b5b0-53caf09ceb38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recommend/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templatetags/filter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/common/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +124,12 @@
       <workItem from="1573618082168" duration="2322000" />
       <workItem from="1573801289529" duration="377000" />
       <workItem from="1573805115443" duration="3236000" />
-      <workItem from="1573900153333" duration="1595000" />
+      <workItem from="1573900153333" duration="7954000" />
+      <workItem from="1574038042399" duration="18137000" />
+      <workItem from="1574122216203" duration="6906000" />
+      <workItem from="1574208509212" duration="2615000" />
+      <workItem from="1574294113756" duration="10865000" />
+      <workItem from="1574350400832" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="Emailでの認証/SNS認証（途中）">
       <created>1572164660957</created>
@@ -154,15 +167,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Emailでの認証/SNS認証（途中）" />
     <option name="LAST_COMMIT_MESSAGE" value="Emailでの認証/SNS認証（途中）" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

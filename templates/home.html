@@ -4,19 +4,7 @@
 {% block h1_title %}Home{% endblock %}
 {%  block content %}
     {% if user.is_authenticated %}
-        <div class="row">
-            <div class="col-sm-8">
-                <h5>Recommend Service</h5>
-            </div>
-            <div class="col-sm-2">
-                <h5>Account</h5>
-                <p>{{ user.username }}</p>
-                <p>{{ user.email }}</p>
-                <p><a href="{% url 'users:account_logout' %}">ログアウト</a></p>
-                <p><a href="{% url 'accounts:password_change' %}">パスワード変更</a></p>
-                <h5>Recommend</h5>
-            </div>
-        </div>
+        <p><a href="{% url 'main:home' %}">Reccomend Service</a></p>
     {% else %}
     <p><a href="{% url 'users:account_login' %}">こちらからログインしてください</a></p>
     {% endif %}

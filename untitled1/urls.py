@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.contrib.auth import views
 from django.urls import include,path
+from django.conf.urls.static import static
+from django.conf import settings
 
 from django.views.generic import TemplateView
 
@@ -30,4 +32,4 @@ urlpatterns = [
     #auth include
     path('accounts/',include('django.contrib.auth.urls')),
     path('main/',include('main.urls'))
-]
+]+  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

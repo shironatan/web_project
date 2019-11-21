@@ -7,8 +7,9 @@
         <small class="text-muted"><p>ユーザーID、パスワードが一致しません</p></small>
     {% endif %}
     <h5>登録情報を入力</h5>
+
 <form method="post">
-    {% csrf_token %}
+{% csrf_token %}
     <div class="form-group">
         <label>Username</label>
         {{ form.username }}
