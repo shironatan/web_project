@@ -29,7 +29,7 @@ class Account_login(View):
             user = User.objects.get(username=username)
             login(request,user)
             return render(request,'home.html')
-        response = render(request,'registration/login.html',{'form':form,})
+        response = render(request,'registration/login.html',{'form':form})
         return response
 
 

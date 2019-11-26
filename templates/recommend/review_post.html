@@ -1,0 +1,20 @@
+{% extends "common/_base.html" %}
+
+{% block title %}レビュー投稿{% endblock %}
+{% block h1_title %}Review Post{% endblock %}
+
+{% block content %}
+    <h5>登録情報を入力</h5>
+    <form action="{% url 'main:review_post_done' %}" method="post">
+        {% csrf_token %}
+    <p>{{ contents }}</p>
+    <input type="hidden" value="{{ contents }}" name="contents">
+    {%  for review_button in form.review %}
+        {{ review_button }}
+        <input type="hidden" value="{{ contents }}" name="contents">
+    {% endfor %}
+    <br>
+    <button type="submit" class="btn btn-secondary">{{submit_text}}</button>
+    </form>
+
+{% endblock %}

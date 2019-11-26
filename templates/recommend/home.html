@@ -4,7 +4,6 @@
 {% block title %}Recommend Service{% endblock %}
 {% block h1_title %}Recommend Service{% endblock %}
 {% block extra_head %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
     $(function(){
     $('.js-modal-open').on('click',function(){
@@ -47,11 +46,22 @@
                                         <img src='{{ MEDIA_URL }}{{ reviews.1 }}' width="200px" height="250px"/>
                                     </div>
                                     <div class="col-sm-8">
+                                        <h5>{{ reviews.0 }}</h5>
                                         <p>{{ reviews.2 }}</p>
                                         {% if reviews.3 == None %}
-                                            <p><a href="">レビューする</a></p>
+                                            <form action="{% url 'main:review_post' %}" method="post">
+                                                {% csrf_token %}
+                                                <input type="hidden" value="{{ reviews.0 }}" name="contents">
+                                                <input type="hidden" value="{{ user.username }}" name="user_id">
+                                                <input type="submit" class="btn btn-secondary btn-block" value="レビューする">
+                                            </form>
                                         {% else %}
-                                            <p>あなたの評価:{{ reviews.3 }}</p>
+                                            <form action="{% url 'main:review_post' %}" method="post">
+                                                {% csrf_token %}
+                                                <input type="hidden" value="{{ reviews.0 }}" name="contents">
+                                                <input type="hidden" value="{{ user.username }}" name="user_id">
+                                                <input type="submit"  class="btn btn-secondary btn-block" value="あなたの評価:{{ reviews.3 }}">
+                                            </form>
                                         {% endif %}
                                     </div>
                                 </div>

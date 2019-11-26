@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e17a22-b3f0-4c31-b5b0-53caf09ceb38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/recommend/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templatetags/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recommend/review_post_done.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/common/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recommend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recommend/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -129,7 +122,12 @@
       <workItem from="1574122216203" duration="6906000" />
       <workItem from="1574208509212" duration="2615000" />
       <workItem from="1574294113756" duration="10865000" />
-      <workItem from="1574350400832" duration="54000" />
+      <workItem from="1574350400832" duration="625000" />
+      <workItem from="1574381511892" duration="8754000" />
+      <workItem from="1574476227265" duration="12161000" />
+      <workItem from="1574584727029" duration="2817000" />
+      <workItem from="1574654352684" duration="6503000" />
+      <workItem from="1574726320146" duration="2548000" />
     </task>
     <task id="LOCAL-00001" summary="Emailでの認証/SNS認証（途中）">
       <created>1572164660957</created>
