@@ -16,6 +16,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT_PATH = os.path.dirname(os.path.dirname(__file__))
 
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -25,7 +27,7 @@ SESSION_COOKIE_NAME = 'djangosample'
 SECRET_KEY = 'zg&2@-1_q)ta01_bgy@qx0g$)5v9wt&j*@#-kn@n&q)lu(%d0%'
 CSRF_HEADER_NAME = 'HTTP_X_CSRFTOKEN'
 CSRF_SESSION_NAME = 'csrf'
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 LOGIN_REDIRECT_URL='/accounts'
@@ -34,6 +36,7 @@ LOGIN_REDIRECT_URL='/accounts'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '*'
 ]
 
 
@@ -57,6 +60,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'accounts.apps.AccountsConfig',
     'user.apps.UserConfig',
+    'main.apps.MainConfig'
 ]
 AUTHENTICATION_BACKENDS = [
    'allauth.account.auth_backends.AuthenticationBackend'
@@ -93,6 +97,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
             'builtins':[
                 'bootstrap4.templatetags.bootstrap4',
@@ -114,7 +119,7 @@ DATABASES = {
         'USER' : 'shimo',
         'PASSWORD' : '',
         'HOST' : 'localhost',
-        'PORT' : ''
+        'PORT' : '5432'
     }
 }
 

@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e17a22-b3f0-4c31-b5b0-53caf09ceb38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main/form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recommend/review_post_done.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recommend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recommend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +47,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/user" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/app1" />
     </key>
@@ -103,7 +109,25 @@
       <workItem from="1572272867085" duration="4183000" />
       <workItem from="1572534356726" duration="2090000" />
       <workItem from="1572658506343" duration="1689000" />
-      <workItem from="1572664012418" duration="21148000" />
+      <workItem from="1572664012418" duration="30302000" />
+      <workItem from="1573012847841" duration="2237000" />
+      <workItem from="1573094862556" duration="1431000" />
+      <workItem from="1573357410156" duration="604000" />
+      <workItem from="1573541254491" duration="1291000" />
+      <workItem from="1573618082168" duration="2322000" />
+      <workItem from="1573801289529" duration="377000" />
+      <workItem from="1573805115443" duration="3236000" />
+      <workItem from="1573900153333" duration="7954000" />
+      <workItem from="1574038042399" duration="18137000" />
+      <workItem from="1574122216203" duration="6906000" />
+      <workItem from="1574208509212" duration="2615000" />
+      <workItem from="1574294113756" duration="10865000" />
+      <workItem from="1574350400832" duration="625000" />
+      <workItem from="1574381511892" duration="8754000" />
+      <workItem from="1574476227265" duration="12161000" />
+      <workItem from="1574584727029" duration="2817000" />
+      <workItem from="1574654352684" duration="6503000" />
+      <workItem from="1574726320146" duration="2548000" />
     </task>
     <task id="LOCAL-00001" summary="Emailでの認証/SNS認証（途中）">
       <created>1572164660957</created>

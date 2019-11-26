@@ -1,13 +1,11 @@
 
 {% extends 'common/_base.html' %}
 {% block title %}ホーム{% endblock %}
+{% block h1_title %}Home{% endblock %}
 {%  block content %}
-    <h2>ホーム</h2>
     {% if user.is_authenticated %}
-        <p>ようこそ{{ user.get_username }}さん</p>
-        <p><a href="{% url 'users:account_logout' %}">ログアウト</a></p>
-        <p><a href="{% url 'accounts:password_change' %}">パスワード変更</a></p>
+        <p><a href="{% url 'main:home' %}">Reccomend Service</a></p>
     {% else %}
-    <p><a href="{% url 'users:account_login' %}">ログイン</a></p>
+    <p><a href="{% url 'users:account_login' %}">こちらからログインしてください</a></p>
     {% endif %}
 {% endblock %}
