@@ -1,9 +1,11 @@
 
 {% extends 'common/_base.html' %}
 {% load filter %}
-{% block title %}Recommend Service{% endblock %}
-{% block h1_title %}Recommend Service{% endblock %}
+{% block title %}Review Note{% endblock %}
+{% block h1_title %}Review Note{% endblock %}
+{% load static %}
 {% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style_main.css' %}">
     <script type="text/javascript">
     $(function(){
     $('.js-modal-open').on('click',function(){
@@ -20,22 +22,18 @@
 {% endblock %}
 {%  block content %}
     {% if user.is_authenticated %}
-        <div class="row">
-            <div class="colQ-sm-8">
-            <h4>あなたにオススメの作品</h4>
-                <p>test</p>
-            <hr>
-                <h4>作品リスト</h4>
+        <p style="margin:0px 3px 10px 3px;"><a href="{% url 'home' %}">< Home</a></p>
+                <p class="Diagonal_lines Recomend">おすすめ作品</p>
                 <div class="d-flex flex-wrap">
                     {% for reviews in review_list %}
-                        <div class="contents_page">
+                        <div class="contents_page {% if reviews.4 == 1 %}Diagonal_lines{% endif %}">
                             <a  class="js-modal-open" data-id="{{ forloop.counter }}" href="" >
-                                <img src='{{ MEDIA_URL }}{{ reviews.1 }}' width="130px" height="150px"/>
                                 {% if reviews.3 == None %}
-                                    <p>評価していません</p>
-                                {% else %}
-                                    <p>あなたの評価:{{ reviews.3 }}</p>
+                                    <div class="review">No watched</div>
+                                    {% else %}
+                                    <div class="review"><i class="far fa-heart"></i> {{ reviews.3 }}</div>
                                 {% endif %}
+                                <img src='{{ MEDIA_URL }}{{ reviews.1 }}' width="100px" height="130px"/>
                             </a>
                         </div>
                         <div class="modal js-modal" data-id="modal{{ forloop.counter }}">
@@ -53,34 +51,39 @@
                                                 {% csrf_token %}
                                                 <input type="hidden" value="{{ reviews.0 }}" name="contents">
                                                 <input type="hidden" value="{{ user.username }}" name="user_id">
-                                                <input type="submit" class="btn btn-secondary btn-block" value="レビューする">
+                                                <input type="submit" class="btn btn-secondary btn-block" value="Not reviewed">
                                             </form>
                                         {% else %}
                                             <form action="{% url 'main:review_post' %}" method="post">
                                                 {% csrf_token %}
                                                 <input type="hidden" value="{{ reviews.0 }}" name="contents">
                                                 <input type="hidden" value="{{ user.username }}" name="user_id">
-                                                <input type="submit"  class="btn btn-secondary btn-block" value="あなたの評価:{{ reviews.3 }}">
+                                                <input type="submit"  class="btn btn-secondary btn-block" value="Your review is {{ reviews.3 }}">
                                             </form>
                                         {% endif %}
                                     </div>
                                 </div>
-                                <a class="js-modal-close" href="">閉じる</a>
+                                <div class="js-modal-close">
+                                    <p  class="js-modal-close-link"><a href="">CLOSE</a></p>
+                                </div>
                             </div>
                         </div>
                     {% endfor %}
                 </div>
-            </div>
-            <div class="col-sm-2">
-                <h5>Account</h5>
-                <p>{{ user.username }}</p>
-                <p>{{ user.email }}</p>
-                <p><a href="{% url 'users:account_logout' %}">ログアウト</a></p>
-                <p><a href="{% url 'accounts:password_change' %}">パスワード変更</a></p>
-                <h5>Recommend</h5>
+            <hr>
             </div>
         </div>
     {% else %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     <p><a href="{% url 'users:account_login' %}">こちらからログインしてください</a></p>
     {% endif %}
 {% endblock %}

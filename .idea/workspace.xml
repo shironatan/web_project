@@ -2,14 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e17a22-b3f0-4c31-b5b0-53caf09ceb38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/recommend/review_post_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0002_delete_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/10234.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/10280.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/10582.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/10937.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/11044.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/11514.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/11735.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/11888.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/12045.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/12278.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/12419.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/12540.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/12587.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/13116.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/13645.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/1449.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/1477.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/14819.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/14918.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/19056.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/20362.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2126.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/21278.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/21314.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2231.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/23897.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/24503.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/24542.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/25553.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2590.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/27159.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/27447.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/27451.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/28138.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2827.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/29834.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/30214.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/3642.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/4142.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/4487.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/4510.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/4589.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/4910.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/4944.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5029.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5039.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5176.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5667.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5746.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5768.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5859.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/597.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/5975.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6120.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6271.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6454.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6522.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6604.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6766.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6927.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/7186.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/7290.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/7593.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/7634.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/764.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/8041.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/811.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/8224.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/8268.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/8374.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/8426.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/8798.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/8850.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/9391.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/9707.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/registration.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/style_home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/style_main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/style_review_post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/common/_base2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/common/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/recommend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recommend/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recommend/review_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recommend/review_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_change_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_change_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +115,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -32,11 +124,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SaZMPs6RjEoAjiPbjNPcIXSW9Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/common" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,6 +141,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/common" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/user" />
@@ -127,7 +225,20 @@
       <workItem from="1574476227265" duration="12161000" />
       <workItem from="1574584727029" duration="2817000" />
       <workItem from="1574654352684" duration="6503000" />
-      <workItem from="1574726320146" duration="2548000" />
+      <workItem from="1574726320146" duration="17370000" />
+      <workItem from="1574779729844" duration="474000" />
+      <workItem from="1574813978613" duration="12343000" />
+      <workItem from="1574900077544" duration="8889000" />
+      <workItem from="1574985530280" duration="7641000" />
+      <workItem from="1575027845430" duration="4831000" />
+      <workItem from="1575247800221" duration="2583000" />
+      <workItem from="1575255071338" duration="5091000" />
+      <workItem from="1575331135396" duration="14168000" />
+      <workItem from="1575417782890" duration="6114000" />
+      <workItem from="1575767562975" duration="1111000" />
+      <workItem from="1578271329386" duration="5947000" />
+      <workItem from="1578442119219" duration="23546000" />
+      <workItem from="1578526049950" duration="490000" />
     </task>
     <task id="LOCAL-00001" summary="Emailでの認証/SNS認証（途中）">
       <created>1572164660957</created>
@@ -163,7 +274,18 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Emailでの認証/SNS認証（途中）" />
     <option name="LAST_COMMIT_MESSAGE" value="Emailでの認証/SNS認証（途中）" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Desktop/work/SotuKen/spark/git_/test.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
