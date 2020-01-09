@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/5.0.9/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
@@ -17,13 +18,13 @@
 
 </head>
 <header>
-    <nav class="navbar navbar-light justify-content-start" style="background-color:#3A405A;">
-        <a href="http://localhost:8000" class="navbar-brand" style="color:white">Contents review WebApplication</a>
+    <nav class="navbar navbar-light justify-content-start">
+        <a href="http://localhost:8000" class="navbar-brand" style="color:white;"><i class="fas fa-video"></i>  Watching the moview!</a>
         <span class="navbar-text" style="color:white;">{% block h1_title %}{% endblock %}</span>
     </nav>
 </header>
 <body>
-<main class="container">
+<main class="container-fluid">
 <br>
     {% block content %}{% endblock %}
 <br>

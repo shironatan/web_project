@@ -83,6 +83,8 @@ ROOT_URLCONF = 'untitled1.urls'
 LOGIN_REDIRECT_URL = 'home'
 ACCOUNT_LOGOUT_REDIRECT_URL = '/users/login/'
 
+
+
 SITE_ID = 1
 
 

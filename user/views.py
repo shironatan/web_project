@@ -4,10 +4,6 @@ from django.contrib.auth.models import User
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
 
-
-
-
-
 from .forms import LoginForm
 
 # Create your views here.

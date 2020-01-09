@@ -29,7 +29,17 @@ class Reviews(models.Model):
         unique_together = (
             ('user_name','contents')
         )
+    def publish(self):
+        self.save()
 
+
+
+class review_ratings(models.Model):
+    user_name = models.ForeignKey(User,verbose_name='ユーザー名',on_delete=models.CASCADE,null=False)
+    contents = models.ForeignKey(Contents,verbose_name='作品名',on_delete=models.CASCADE,null=False)
+    rating = models.FloatField(verbose_name='rating',null=False)
+    class Meta:
+        db_table = 'review_rating'
 
     def publish(self):
         self.save()
